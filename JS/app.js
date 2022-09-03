@@ -11,6 +11,7 @@ const loadNewsCategory = async () => {
 
 const displayNewsCategory = categories => {
     console.log(categories);
+
     const categoriesContainer = document.getElementById('category-container');
 
     categories.forEach(category => {
@@ -42,7 +43,7 @@ const displayNewsCategory = categories => {
 
 const displayNews = async category_id => {
 
-
+    toggleSpinner(true);
     const url = ` https://openapi.programming-hero.com/api/news/category/${category_id}`;
     //console.log(url);
 
@@ -135,6 +136,7 @@ const DetailsNews = newses => {
 
         newsContainer.appendChild(newsDiv);
     });
+    toggleSpinner(false);
 }
 
 
@@ -167,6 +169,15 @@ const DetailsNewsButton = info => {
 
 
 }
-displayNews('08');
+const toggleSpinner = isLoading => {
+    const loaderSection = document.getElementById('loader');
+    if (isLoading) {
+        loaderSection.classList.remove('d-none')
+    }
+    else {
+        loaderSection.classList.add('d-none');
+    }
+}
+//displayNews('');
 loadNewsCategory();
 

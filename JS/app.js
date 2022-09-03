@@ -10,10 +10,14 @@ const loadNewsCategory = async () => {
 }
 
 const displayNewsCategory = categories => {
-    //console.log(categories);
+    console.log(categories);
     const categoriesContainer = document.getElementById('category-container');
+
     categories.forEach(category => {
         //console.log(category);
+
+
+
         const catagoryDiv = document.createElement('div');
         catagoryDiv.classList.add('col');
         catagoryDiv.innerHTML = `
@@ -28,6 +32,8 @@ const displayNewsCategory = categories => {
         
         `;
         categoriesContainer.appendChild(catagoryDiv);
+
+
 
     });
 
@@ -50,7 +56,18 @@ const displayNews = async category_id => {
 }
 const DetailsNews = newses => {
     //console.log(newses);
+
+
+    const showvalue = document.getElementById('length');
+    showvalue.innerHTML = `
+    <h5>${newses.length} items found for this category  
+    </h5>
+                    
+    `;
+
     const newsContainer = document.getElementById('news-container');
+    newsContainer.innerHTML = ``;
+
     newses.forEach(news => {
         console.log(news);
 
@@ -150,5 +167,6 @@ const DetailsNewsButton = info => {
 
 
 }
+displayNews('08');
 loadNewsCategory();
 

@@ -10,7 +10,7 @@ const loadNewsCategory = async () => {
 }
 
 const displayNewsCategory = categories => {
-    console.log(categories);
+    //console.log(categories);
 
     const categoriesContainer = document.getElementById('category-container');
 
@@ -54,10 +54,13 @@ const displayNews = async category_id => {
 
 
 
+
 }
 const DetailsNews = newses => {
-    //console.log(newses);
-
+    console.log(newses);
+    newses.sort(function (a, b) {
+        return b.total_view - a.total_view
+    });
 
     const showvalue = document.getElementById('length');
     showvalue.innerHTML = `
@@ -70,7 +73,14 @@ const DetailsNews = newses => {
     newsContainer.innerHTML = ``;
 
     newses.forEach(news => {
-        console.log(news);
+        //console.log(news);
+
+        /*
+        newArray.push(news.total_view);
+        //console.log(newArray);
+
+        newArray.sort(function (a, b) { return a - b });
+        console.log(newArray);*/
 
 
         const newsDiv = document.createElement('div');

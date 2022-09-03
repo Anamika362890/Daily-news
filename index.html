@@ -23,19 +23,20 @@
             <header class=" sticky-top my-3   ">
                 <nav class="navbar navbar-expand-lg navbar-light mt-2">
                     <div class="container ">
-                        <a class="navbar-brand h1" href="#">Daily<span class=" px-2">News</span> </a>
+                        <a class="navbar-brand h1" href="#"><span class="h1">Daily</span><span
+                                class=" px-2 text-danger h1">News</span> </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
-                            <nav class="navbar-nav ms-auto h5  py-3 ">
+                            <nav class="navbar-nav ms-auto h5 gray py-3 ">
                                 <li class="nav-item active">
-                                    <a class="nav-link text-black px-5 pt-3" href="#">Home </a>
+                                    <a class="nav-link  px-5 pt-3" href="#">Home </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-black px-5 pt-3" href="#">Blog</a>
+                                    <a class="nav-link px-5 pt-3" href="#">Blog</a>
                                 </li>
                                 <li class="profile ms-5 ">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMlAbzhA9a-By_ekwI66JAToCZZFkU8jTZA&usqp=CAU"
@@ -93,10 +94,45 @@
         </section>
 
 
+
         <section class="container">
             <!-- categories -->
-            <div id="category-container" class="border-top border-3 text-center py-5 row ">
+            <div id="category-container" class="border-top border-3 text-center py-5  row ">
             </div>
+
+            <!-- search -->
+            <div class="container mt-4">
+                <input class="form-control  shadow-lg p-3 mb-5 bg-body rounded" type="text"
+                    value="Readonly input here..." aria-label="readonly input example" readonly>
+            </div>
+
+            <div class="d-flex mb-5">
+                <div class="container d-flex">
+
+                    <div>
+                        <h5 class="mt-1 me-2">Sort By View:</h5>
+                    </div>
+
+
+                    <div>
+                        <select class="form-select gray " aria-label="Default select example">
+                            <option selected>Default</option>
+
+                        </select>
+
+
+                    </div>
+
+                    <div class="ms-auto">
+                        <button type="button" class=" ms-5 btn btn-info btn-lg  text-white me-2 ">Today's Pick</button>
+                        <button type="button" class="btn btn-outline-info btn-lg">Trending</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
 
             <!-- news -->
             <div id="news-container" class="row row-cols-1 row-cols-md-1 g-4">
@@ -107,6 +143,7 @@
 
 
         </section>
+
 
 
 

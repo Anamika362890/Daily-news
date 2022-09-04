@@ -17,134 +17,133 @@
 
 <body>
     <main>
-        <header>
 
-            <!-- Navbar Start -->
-            <header class=" sticky-top my-3 bg-white  ">
-                <nav class="navbar navbar-expand-lg navbar-light mt-2">
-                    <div class="container ">
-                        <a class="navbar-brand h1" href="#"><span class="h1">Daily</span><span
-                                class=" px-2 text-danger h1">News</span> </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse " id="navbarNav">
-                            <nav class="navbar-nav ms-auto h5 gray py-3 ">
-                                <li class="nav-item active">
-                                    <a class="nav-link  px-5 pt-3" href="index.html">Home </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-5 pt-3" href="blog.html">Blog</a>
-                                </li>
-                                <li class="profile ms-5 ">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMlAbzhA9a-By_ekwI66JAToCZZFkU8jTZA&usqp=CAU"
-                                        class=" rounded-circle border border-danger border-2 pt-1">
-                                </li>
 
-                            </nav>
+        <!-- Navbar Start -->
+        <header class=" sticky-top my-3 bg-white  ">
+            <nav class="navbar navbar-expand-lg navbar-light mt-2">
+                <div class="container ">
+                    <a class="navbar-brand h1" href="#"><span class="h1">Daily</span><span
+                            class=" px-2 text-danger h1">News</span> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <nav class="navbar-nav ms-auto h5 gray py-3 ">
+                            <li class="nav-item active">
+                                <a class="nav-link  px-5 pt-3" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-5 pt-3" href="blog.html">Blog</a>
+                            </li>
+                            <li class="profile ms-5 ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMlAbzhA9a-By_ekwI66JAToCZZFkU8jTZA&usqp=CAU"
+                                    class=" rounded-circle border border-danger border-2 pt-1">
+                            </li>
+
+                        </nav>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Navbar end -->
+        <main>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel"></h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modal-details" class="modal-body">
 
                         </div>
-                    </div>
-                </nav>
-            </header>
-            <!-- Navbar end -->
-            <main>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLabel"></h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div id="modal-details" class="modal-body">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <section class="container">
-                    <!-- categories -->
-                    <div id="category-container" class="border-top border-3 text-center py-5  row ">
-                    </div>
-
-                    <!-- search -->
-                    <div class="container mt-2 border p-4 mb-4 shadow-lg py-4 mb-5 bg-body rounded">
-                        <div id="length">
-
-                        </div>
-
-                    </div>
-
-                    <div class="d-flex mb-5">
-                        <div class="container d-flex">
-
-                            <div>
-                                <h5 class="mt-1 me-2">Sort By View:</h5>
-                            </div>
-
-
-                            <div>
-                                <select class="form-select gray " aria-label="Default select example">
-                                    <option selected>Default</option>
-
-                                </select>
-
-
-                            </div>
-
-                            <div class="ms-auto">
-                                <button type="button" class=" ms-5 btn btn-info btn-lg  text-white me-2 ">Today's
-                                    Pick</button>
-                                <button type="button" class="btn btn-outline-info btn-lg">Trending</button>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-                    <!-- news -->
-                    <div id="news-container" class="row row-cols-1 row-cols-md-1 g-4">
-
-
-                    </div>
-
-
-
-                </section>
-                <!-- Spinner -->
-                <section id="loader" class="d-none">
-                    <div class="d-flex justify-content-center text-danger ">
-                        <div class="spinner-border" role="status">
-                            <span class="sr-only">Loading...</span>
-                        </div>
-                    </div>
-                </section>
-
-            </main>
-            <footer>
-                <div class="text-center p-5 mt-5 shadow-lg gray">
-                    <h5>Copyright 2022 News Portal</h5>
+            <section class="container">
+                <!-- categories -->
+                <div id="category-container"
+                    class="border-top border-3 text-center py-5 row flex-column flex-md-column flex-lg-row  ">
                 </div>
-            </footer>
 
-            <!-- Bootstrap’s JS -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-                crossorigin="anonymous"></script>
-            <!-- JS -->
-            <script src="JS/app.js"></script>
+                <!-- search -->
+                <div class="container mt-2 border p-4 mb-4 shadow-lg py-4 mb-5 bg-body rounded">
+                    <div id="length">
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex mb-5">
+                    <div class="container d-flex flex-column flex-lg-row ">
+
+                        <div>
+                            <h5 class="mt-1 me-2">Sort By View:</h5>
+                        </div>
+
+
+                        <div>
+                            <select class="form-select gray " aria-label="Default select example">
+                                <option selected>Default</option>
+
+                            </select>
+
+
+                        </div>
+
+                        <div class="ms-lg-auto mt-5 mt-lg-0 text-center  ">
+                            <button type="button" class=" ms-5 btn btn-info btn-lg  text-white me-2 ">Today's
+                                Pick</button>
+                            <button type="button" class="btn btn-outline-info btn-lg">Trending</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- news -->
+                <div id="news-container" class="row row-cols-1 row-cols-md-1 g-4">
+
+
+                </div>
+
+
+
+            </section>
+            <!-- Spinner -->
+            <section id="loader" class="d-none">
+                <div class="d-flex justify-content-center text-danger ">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="text-center p-5 mt-5 shadow-lg gray">
+                <h5>Copyright 2022 News Portal</h5>
+            </div>
+        </footer>
+
+        <!-- Bootstrap’s JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="JS/app.js"></script>
 </body>
 
 </html>

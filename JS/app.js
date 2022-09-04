@@ -27,7 +27,7 @@ const displayNewsCategory = categories => {
         catagoryDiv.classList.add('col');
         catagoryDiv.innerHTML = `
 
-        <a onclick="displayNews('${category.category_id}')" class="h6  gray text-decoration-none " href="#"> ${category.category_name}</a>
+        <a onclick="displayNews('${category.category_id}')" class="h6  gray text-decoration-none h" href="#"> ${category.category_name}</a>
         
 
 
@@ -37,6 +37,7 @@ const displayNewsCategory = categories => {
         
         `;
         categoriesContainer.appendChild(catagoryDiv);
+
 
 
 
@@ -50,12 +51,14 @@ const displayNews = async category_id => {
     toggleSpinner(true);
     const url = ` https://openapi.programming-hero.com/api/news/category/${category_id}`;
     //console.log(url);
-
-    const res = await fetch(url);
-    const data = await res.json();
-    DetailsNews(data.data)
-
-
+    try {
+        const res = await fetch(url);
+        const data = await res.json();
+        DetailsNews(data.data)
+    }
+    catch (error) {
+        console.log('Something Wrong')
+    }
 
 
 
@@ -149,9 +152,19 @@ const displayNewsDetails = async news_id => {
 
     const url = ` https://openapi.programming-hero.com/api/news/${news_id}`;
     //console.log(url);
-    const res = await fetch(url);
-    const data = await res.json();
-    DetailsNewsButton(data.data[0])
+
+    try {
+
+        const res = await fetch(url);
+        const data = await res.json();
+        DetailsNewsButton(data.data[0])
+    }
+    catch (error) {
+        console.log('Something Wrong')
+    }
+
+
+
 
 }
 

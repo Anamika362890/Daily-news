@@ -22,3 +22,16 @@
 .blog {
     height: 40vh;
 }
+
+a:hover {
+    color: rgba(255, 0, 0, 0.545);
+
+
+}
+
+
+
+.nav-link:hover {
+    color: rgba(255, 0, 0, 0.545);
+    text-decoration: underline;
+}

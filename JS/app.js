@@ -109,7 +109,7 @@ const DetailsNews = newses => {
           </div>
           <div class="d-flex align-items-center align-items-center mx-auto">
           <div class="icon ">
-          <img src="view.png" class=" profile " alt="...">
+          <img src="Img/view.png" class=" profile " alt="...">
           </div>
           <div class="ms-4 gray mt-1 ">
           <h5 class="fw-bold">${news.total_view ? news.total_view : 'No Viewers'}</h5>

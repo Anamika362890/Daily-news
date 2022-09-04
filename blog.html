@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <!-- Bootstrap’s CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4bf5f38b45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <header class=" sticky-top my-3 bg-white shadow-lg ">
+        <nav class="navbar navbar-expand-lg navbar-light mt-2">
+            <div class="container ">
+                <a class="navbar-brand h1" href="#"><span class="h1">Daily</span><span
+                        class=" px-2 text-danger h1">News</span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <nav class="navbar-nav ms-auto h5 gray py-3 ">
+                        <li class="nav-item active">
+                            <a class="nav-link  px-5 pt-3" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 pt-3" href="blog.html">Blog</a>
+                        </li>
+                        <li class="profile ms-5 ">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMlAbzhA9a-By_ekwI66JAToCZZFkU8jTZA&usqp=CAU"
+                                class=" rounded-circle border border-danger border-2 pt-1">
+                        </li>
+
+                    </nav>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar end -->
+    <div class="container">
+        <h1 class="text-center text-danger my-5">Welcome To Blog Area</h1>
+        <div class=" row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+            <div class="col shadow-lg mb-3">
+                <div class="card h-100">
+                    <img src="Img/1.webp " class="card-img-top blog" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">What is the different between Var,Let & Const?</h5>
+                        <p class="card-text gray">
+                        <h6 class="my-1">Let:</h6> The let keyword declares a block-scoped local variable, optionally
+                        initializing it to a value.
+                        Block-scoped means that the variable is only available
+                        within the block it was declared in,
+                        which is usually denoted by curly braces {}.
+                        <h6 class="my-1">var:</h6> The var keyword declares a function-scoped or global variable,
+                        optionally
+                        initializing
+                        it to a value.
+                        Function-scoped means that the variable is only available within the function it was
+                        declared in. Global variables are available throughout your entire code.
+                        <h6 class="my-1">Const: :</h6>The const keyword declares a block-scoped, immutable constant
+                        variable, variable that can’t be reassigned.
+                        Constants are also called “immutable variables”, but that’s a bit of a misnomer since
+                        they are actually variables just ones that can’t be reassigned.
+                        </p>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col shadow-lg mb-3">
+                <div class="card h-100 ">
+                    <img src="Img/2.jpeg" class="card-img-top blog" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">What is the different between Arrow Function & Reguler Function?</h5>
+                        <p class="card-text gray">
+                        <h6 class="my-2">Regular Function:</h6>
+
+                        Regular functions created using function declarations or expressions are constructible and
+                        callable. Since regular functions are constructible, they can be called using the new
+                        keyword.
+                        <h6 class="my-2">Arrow Function:</h6> The arrow functions are only callable and not
+                        constructible, arrow
+                        functions can never be used as constructor functions.
+                        </p>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col shadow-lg mb-3">
+                <div class="card h-100 ">
+                    <img src="Img/im templete.png " class="card-img-top blog " alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title mb-3">Why We Use Templete String?</h5>
+                        <p class="card-text gray">
+
+                            Template literals are literals delimited with backtick (`) characters, allowing for
+                            multi-line strings, for string interpolation with embedded expressions, and for special
+                            constructs called tagged templates.
+                            Template strings are a powerful feature of modern JavaScript released in ES6. It lets us
+                            insert/interpolate variables and expressions into strings without needing to concatenate
+                            like in older versions of JavaScript. It allows us to create strings that are complex and
+                            contain dynamic elements.
+
+                        </p>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col shadow-lg">
+                <div class="card h-100">
+                    <img src="Img/map.jpg" class="card-img-top blog" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">What is the different between Var,Let & Const?</h5>
+                        <p class="card-text gray">
+                        <h6 class="my-1">map():</h6>Definition and Usage. map() creates a new array from calling a
+                        function for every array element. map() calls a function once for each element in an array.
+                        map() does not execute the function for empty elements. map() does not change the original
+                        array.
+                        <h6 class="my-1">forEach:</h6> The forEach() method calls a function for each element in an
+                        array. The forEach() method is not executed for empty elements.
+                        <h6 class="my-1">filter():</h6>The filter() method creates a new array filled with elements that
+                        pass a test provided by a function. The filter() method does not execute the function for empty
+                        elements. The filter() method does not change the original array.
+
+                        <h6 class="my-1">find():</h6>The find() method returns the value of the first element that
+                        passes a test. The find() method executes a function for each array element. The find() method
+                        returns undefined if no elements are found. The find() method does not execute the function for
+                        empty elements.
+                        </p>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

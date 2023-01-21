@@ -27,7 +27,7 @@ const displayNewsCategory = categories => {
         catagoryDiv.classList.add('col');
         catagoryDiv.innerHTML = `
 
-        <a onclick="displayNews('${category.category_id}')" class="h6  gray text-decoration-none h" href="#"> ${category.category_name}</a>
+        <a onclick="displayNews('${category.category_id}')" class="h6  gray text-decoration-none " href="#"> ${category.category_name}</a>
         
 
 
